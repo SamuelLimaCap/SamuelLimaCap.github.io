@@ -1,0 +1,132 @@
+body {
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 2px;
+  background-color: #333333;
+  color: rgb(92, 91, 91);
+}
+
+h1,h2 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+}
+h5 {
+  font-size: 13px;
+}
+
+.left-col {
+  width: 100%;
+  position: relative;
+
+}
+
+.right-col {
+  width: 100%;
+  position: relative;
+  padding-top: 15px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: -5px -5px 30px rgb(92, 91, 91);
+}
+
+.image {
+  background-image: url("/img/meMain.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 2.5%;
+  width: 95%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.image::before  {
+  background: linear-gradient( -50deg, rgba(0, 0, 0, 0.363) 00%, rgba(0, 0, 0, 0.856) 4%, transparent 50%, transparent 80% );
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+}
+
+
+.header {
+  height: 100vh;
+}
+
+.progressHeader {
+  padding-top: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 30%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.headerLeft {
+  left: 10%;
+}
+.headerRight {
+  left: 65%;
+}
+
+ .content {
+  color: antiquewhite;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  z-index: 1;
+}
+
+.about {
+  padding:0 10px 0;
+}
+
+.cards {
+  display: flex;
+}
+
+.columns-base {
+  flex-flow: row wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+padding5{
+  padding: 3px;
+}
+
+@media (min-width:769px) {
+  .left-col{
+    width: 34.4%;
+    left:10px;
+    position: fixed;
+
+  }
+  .right-col {
+    width: 62.6%;
+    right: 0;
+    left: 36.4%;
+    top: 0;
+    position: absolute;
+  }
+
+  .image {
+    left: 0;
+    width: 100%;
+  }
+
+  padding5 {
+    padding: 5px;
+  }
+}
